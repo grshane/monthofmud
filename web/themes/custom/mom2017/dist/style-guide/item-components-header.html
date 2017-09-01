@@ -65,21 +65,16 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="header">
-  <h2 class="header__heading">Header component</h2>
-    <article class="header__item">
-    <h3>This is the first title</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </article>
-    <article class="header__item">
-    <h3>This is the second title</h3>
-    <p>Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</p>
-  </article>
-    <article class="header__item">
-    <h3>This is the third title</h3>
-    <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
-  </article>
-  </section>
+
+
+
+
+              <ulmenu>
+                  </ul>
+      
+
+
+
 
                   </div>
                 </div>
@@ -88,15 +83,8 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/header&#039;) }}
-&lt;section class=&quot;header&quot;&gt;
-  &lt;h2 class=&quot;header__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
-  {% for item in items %}
-  &lt;article class=&quot;header__item&quot;&gt;
-    &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
-    &lt;p&gt;{{ item.desc }}&lt;/p&gt;
-  &lt;/article&gt;
-  {% endfor %}
-&lt;/section&gt;
+{% include &quot;@mo_m/menu/menu.twig&quot; %}
+
 </code></pre>
                   </template>
                 </div>

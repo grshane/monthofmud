@@ -1,0 +1,7 @@
+name: monthofmud
+recipe: pantheon
+config:
+  framework: drupal8
+  env: dev
+  site: monthofmud
+  id: c1008179-94f3-4a56-ba0b-53c7f98ca3f8
