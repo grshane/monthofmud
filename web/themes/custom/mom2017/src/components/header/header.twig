@@ -1,0 +1,10 @@
+{{ attach_library('theme_name/header') }}
+<section class="header">
+  <h2 class="header__heading">{{ heading }}</h2>
+  {% for item in items %}
+  <article class="header__item">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.desc }}</p>
+  </article>
+  {% endfor %}
+</section>

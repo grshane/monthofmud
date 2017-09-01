@@ -1,0 +1,10 @@
+{{ attach_library('theme_name/race-schedule') }}
+<section class="race-schedule">
+  <h2 class="race-schedule__heading">{{ heading }}</h2>
+  {% for item in items %}
+  <article class="race-schedule__item">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.desc }}</p>
+  </article>
+  {% endfor %}
+</section>

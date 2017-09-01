@@ -1,0 +1,10 @@
+{{ attach_library('theme_name/hero') }}
+<section class="hero">
+  <h2 class="hero__heading">{{ heading }}</h2>
+  {% for item in items %}
+  <article class="hero__item">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.desc }}</p>
+  </article>
+  {% endfor %}
+</section>

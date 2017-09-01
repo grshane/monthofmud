@@ -1,0 +1,10 @@
+{
+  "heading": "Hero component",
+  "items":[
+    {
+      "title": "This is the hero title",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "bg-image": "../../images/bg-image.jpg"
+    }
+  ]
+}
