@@ -39,7 +39,8 @@ module.exports = function (gulp, plugins, options) {
       options.sass.files
     ], function () {
       plugins.runSequence(
-        'compile:styleguide'
+        'compile:styleguide',
+        'browser-sync:reload'
       );
     });
   });

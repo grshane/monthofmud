@@ -6,6 +6,19 @@
 //
 // Style guide: components.header
 
+.header--primary {
+  background: sandybrown;
+
+  .mq-header {
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+
 .region-header {
   @include region-spacer($light-gray);
+  display: flex;
 }
