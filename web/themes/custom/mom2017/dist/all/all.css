@@ -419,6 +419,14 @@ li {
   padding: 0;
   list-style: none; }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal; }
+
 
 .hero {
   background: url("../../images/bg-image.jpg");
@@ -438,6 +446,12 @@ li {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+
+.region-header {
+  background: #c4d600; }
+
+.menu--main {
+  background: #c4d600; }
 
 header {
   background-color: #888b8d; }

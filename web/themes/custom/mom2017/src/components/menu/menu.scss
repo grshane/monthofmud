@@ -1,0 +1,17 @@
+// Menu
+//
+// This is the Menu component. It's an example.
+//
+// Markup: menu.twig
+//
+// Style guide: Components.menu
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.region-header {
+  background: $color-rio-grande;
+}
+.menu--main {
+  background: $color-rio-grande;
+}

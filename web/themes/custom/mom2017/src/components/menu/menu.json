@@ -1,0 +1,11 @@
+{
+  "menu_name": "Main",
+  "items":[
+    {
+      "menu_links": "Item 1",
+      "menu_links": "Item 2",
+      "menu_links": "Item 3"
+    }
+  ],
+  "heading": "Menu component"
+}

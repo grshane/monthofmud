@@ -1,0 +1,15 @@
+name: Race
+description: 'Provides Race content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - address
+  - datetime
+  - field
+  - field_formatter_class
+  - link
+  - menu_ui
+  - node
+  - path
+  - user
+  - views

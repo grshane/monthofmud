@@ -29,3 +29,8 @@ global:
 #   dependencies:
 #     - mo_m/clearfix
 #     - mo_m/visually-hidden
+mom2017:
+  menu:
+    css:
+      component:
+        dist/css/menu.css
