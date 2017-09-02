@@ -1,0 +1,22 @@
+uuid: ccdd15ae-e737-48a6-a6b9-3e017461a542
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mo_m
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: mo_m_content
+theme: mo_m
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

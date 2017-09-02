@@ -1,0 +1,8 @@
+node_type_race_status: '1'
+node_type_race_pattern: '[node:field_race_title_public]-[node:field_race_date:date:html_year]'
+node_type_race_php: 0
+submit: 'Save configuration'
+form_build_id: form-jUul2IERSk9rFyOMydpA9Dsl-IG63jmkWmZws1OjjJQ
+form_token: YZYqWujpLkygMrPDyXgFwwBVq7hXvWl4xCfNgYfcFjI
+form_id: auto_entitylabel_settings_form
+op: 'Save configuration'
