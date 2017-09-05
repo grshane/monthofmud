@@ -9,16 +9,26 @@
 .header--primary {
   background: sandybrown;
 
-  .mq-header {
-
-    .menu {
-      display: flex;
-      justify-content: space-around;
+}
+.menu--main {
+  .menu {
+    display: flex;
+    .menu-item {
+      list-style: none;
+      text-transform: uppercase;
+      padding: 0.5em 1em;
+      margin: 0.2em;
+      background: $yellow;
     }
   }
+
+
 }
+
 
 .region-header {
   @include region-spacer($light-gray);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

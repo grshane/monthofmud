@@ -4,4 +4,13 @@
 .is-collapsed {
 
 }
+
+%is-fullwidth {
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+  left: 50%;
+  right: 50%;
+  position: relative;
+}
 /* stylelint-enable */

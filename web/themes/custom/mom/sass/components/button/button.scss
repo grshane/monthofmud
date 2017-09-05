@@ -1,0 +1,19 @@
+// Button
+//
+// :hover   - Text turns red on hover.
+// .rounded   - Wow! So round!
+//
+// Markup: button.twig
+//
+// Style guide: components.button
+.button {
+  color: blue;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+button:hover {
+  color: red;
+}

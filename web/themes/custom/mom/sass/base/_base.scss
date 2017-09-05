@@ -1,15 +1,13 @@
 // Base HTML Elements.
-html,
-body {
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
 }
 
+html,
 body {
-  font-family: $body_font;
-  font-size: 1em;
-  line-height: 165%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 // Base Headings
 //

@@ -17,9 +17,10 @@ $link: $med-gray;
 
 // Fonts ///////////////
 $opensans: 'Open Sans';
+$cabin: 'Cabin';
 $poppins: 'Poppins';
-$heading_font: $opensans;
-$body_font: $poppins;
+$heading_font: $cabin;
+$body_font: $opensans;
 
 // Susy config ///////////////
 $susy: (
@@ -35,6 +36,11 @@ $small: $screen max-width $small-max;
 $up-sm: $screen $small-max + 1;
 $medium: $screen $small-max + 1 $medium-max;
 $large: $screen $medium-max + 1;
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 14px;
+$max_font: 20px;
 
 // EXAMPLE FOR MQ REFERENCES =>
 
@@ -100,4 +106,26 @@ body {
   background: $off-white;
 
   @extend .tmp-shadow;
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
 }

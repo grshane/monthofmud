@@ -1,0 +1,14 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlcm8uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBYTtFQUNiLGNBQWM7RUFDZCxxQkFBYztFQUFkLGNBQWM7RUFDZCxzQkFBd0I7RUFBeEIsd0JBQXdCO0VBQ3hCLHVCQUFvQjtFQUFwQixvQkFBb0I7RUFDcEIsMkJBQXVCO0VBQXZCLHVCQUF1QjtDQUN4QiIsImZpbGUiOiJjb21wb25lbnRzL2hlcm8uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlcm8ge1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuIl19 */

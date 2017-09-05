@@ -1,0 +1,22 @@
+// Hero
+//
+// This is the Hero component. It's an example.
+//
+// Markup: hero.twig
+//
+// Style guide: components.hero
+
+.hero {
+  //background: url("../../images/bg-image.jpg");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.hero__content {
+  width: span(8);
+}
