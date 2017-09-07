@@ -47,7 +47,7 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 
 <div{{ attributes.addClass(classes)}} style="background-image: url({{file_url(paragraph.field_bg_image.entity.fileuri) }})">
   <div class="hero__content">
-    <h1>{{ paragraph.field_heading.value|raw }}</h1>
+    <h1 class="hero__heading">{{ paragraph.field_heading.value|raw }}</h1>
     <a class="hero__cta" href={{ field_cta_link }}>
       <button class="button">Learn More</button>
     </a>

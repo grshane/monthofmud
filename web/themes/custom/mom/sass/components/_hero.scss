@@ -13,10 +13,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-
+  flex-direction: row;
+  background: no-repeat;
+  background-size: cover;
 }
 
 .hero__content {
   width: span(8);
+  background: rgba(0,0,0,0.4);
+  margin: 0 (gutter() / 2);
+  padding: 0.5em 0.7em;
+  text-align: center;
+
+  .hero__heading {
+    font-weight: bold;
+    color: $white;
+  }
 }
