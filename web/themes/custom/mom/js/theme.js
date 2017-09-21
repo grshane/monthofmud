@@ -7,7 +7,6 @@
       if (typeof context['location'] !== 'undefined') { // Only fire on document load.
 
         try{Typekit.load({ async: true });}catch(e){}
-
       }
     }
   };
