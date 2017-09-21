@@ -1,0 +1,39 @@
+uuid: 56596963-9e05-4590-b816-50b09b1af1bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other
+    - media_entity.bundle.images
+    - node.type.spon
+  module:
+    - entityconnect
+third_party_settings:
+  entityconnect:
+    buttons:
+      button_add: '1'
+      button_edit: '1'
+    icons:
+      icon_add: '0'
+      icon_edit: '0'
+id: node.spon.field_other
+field_name: field_other
+entity_type: node
+bundle: spon
+label: logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

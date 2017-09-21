@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_paragraph_wrapper
     - node.type.page
   module:
+    - entity_reference_revisions
     - text
     - user
 _core:
@@ -18,11 +20,18 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 101
+  field_paragraph_wrapper:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  links: true

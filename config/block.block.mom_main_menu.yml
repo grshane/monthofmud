@@ -13,7 +13,7 @@ _core:
 id: mom_main_menu
 theme: mom
 region: header
-weight: -5
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

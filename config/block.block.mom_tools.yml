@@ -13,7 +13,7 @@ _core:
 id: mom_tools
 theme: mom
 region: header
-weight: -1
+weight: -4
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
