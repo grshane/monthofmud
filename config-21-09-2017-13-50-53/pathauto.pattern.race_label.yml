@@ -1,0 +1,22 @@
+uuid: e07eb337-8b39-4eb9-8013-134bd5c348cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: race_label
+label: 'Race Label'
+type: 'canonical_entities:node'
+pattern: '[node:field_race_date:date:html_year]/[node:field_race_title_public]'
+selection_criteria:
+  54256aea-c97b-45ac-add2-a18b89db0863:
+    id: node_type
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 54256aea-c97b-45ac-add2-a18b89db0863
+selection_logic: and
+weight: -5
+relationships: {  }

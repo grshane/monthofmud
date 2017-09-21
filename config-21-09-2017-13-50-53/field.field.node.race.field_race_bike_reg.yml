@@ -1,0 +1,23 @@
+uuid: 713cdb4d-413a-4605-9faa-696931cde644
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_race_bike_reg
+    - node.type.race
+  module:
+    - link
+id: node.race.field_race_bike_reg
+field_name: field_race_bike_reg
+entity_type: node
+bundle: race
+label: 'Bike Reg'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

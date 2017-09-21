@@ -1,0 +1,20 @@
+uuid: 73fc53e2-5468-4f3b-8cb0-21bd9250eaf2
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+    - node
+id: node.field_spon_logo_ref
+field_name: field_spon_logo_ref
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -183,6 +183,10 @@ input[type="url"] {
   transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
 
+input[type="search"] {
+  margin: 0 0.5em 0 0;
+}
+
 input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="month"]:focus,
@@ -214,5 +218,14 @@ form input {
 
   &[disabled] {
     transition: auto;
+  }
+}
+
+.search-block-form {
+  padding-right: 0.3em;
+  form {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
   }
 }

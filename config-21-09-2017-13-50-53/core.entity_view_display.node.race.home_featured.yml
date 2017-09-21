@@ -1,0 +1,55 @@
+uuid: 0d218829-4c65-4ba9-88ee-68a29990c347
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.home_featured
+    - field.field.node.race.field_race_addr
+    - field.field.node.race.field_race_bike_reg
+    - field.field.node.race.field_race_date
+    - field.field.node.race.field_race_imag
+    - field.field.node.race.field_race_title_public
+    - node.type.race
+  module:
+    - datetime
+    - field_formatter_class
+    - user
+id: node.race.home_featured
+targetEntityType: node
+bundle: race
+mode: home_featured
+content:
+  field_race_date:
+    weight: 1
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: datetime_default
+    region: content
+  field_race_imag:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+  field_race_title_public:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_race_addr: true
+  field_race_bike_reg: true
+  links: true

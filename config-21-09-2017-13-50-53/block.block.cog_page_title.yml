@@ -1,0 +1,20 @@
+uuid: fd5aae0d-b7cb-465c-8b61-3c18977215e8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cog
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: cog_page_title
+theme: cog
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: ed4714e4-8432-4e14-b561-c04620570195
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sections
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.paragraph_wrapper
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraph_wrapper.field_sections
+field_name: field_sections
+entity_type: paragraph
+bundle: paragraph_wrapper
+label: Sections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero: hero
+    target_bundles_drag_drop:
+      hero:
+        enabled: true
+        weight: 3
+      paragraph_wrapper:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions
