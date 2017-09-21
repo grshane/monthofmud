@@ -106,6 +106,7 @@ var options = {
     // Put your local site URL here to prevent Browsersync
     // from prompting you to add additional scripts to your page.
     proxy: {
+      // target: 'https://monthofmud.lndo.site'
       target: 'https://monthofmud.lndo.site'
     },
     open: 'external',

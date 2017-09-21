@@ -7,6 +7,7 @@ libraries:
   - mom/fonts
   - mom/fontawesome
   - mom/global_styles
+  - mom/typekit
 regions:
   branding: Branding
   header: Header

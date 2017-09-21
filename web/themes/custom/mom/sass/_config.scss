@@ -2,7 +2,8 @@
 // common colors
 $white: #fff;
 $red: #ee696c;
-$yellow: #e8ed57;
+$yellow: #e1ba6b;
+$accent: #7a6aff;
 // b&w colors as placeholders
 $blk: #000;
 $dark-gray: lighten($blk, 20%);
@@ -18,6 +19,7 @@ $link: $med-gray;
 // Fonts ///////////////
 $opensans: 'Open Sans';
 $cabin: 'Cabin';
+$crackhouse: 'crackhouse';
 $poppins: 'Poppins';
 $heading_font: $cabin;
 $body_font: $opensans;

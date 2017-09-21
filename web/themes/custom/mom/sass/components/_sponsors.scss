@@ -1,0 +1,43 @@
+.sponsor__class {
+  @extend %is-fullwidth;
+  background: $light-gray;
+  .view-sponsor-list {
+    @extend .mq-main;
+  }
+  .sponsor__class--title {
+    text-align: center;
+    font-family: $crackhouse;
+    font-size: 250%;
+  }
+}
+
+.view-sponsor-list {
+  .view-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.sponsor--gold {
+  @include breakpoint($up-sm){
+    width: span(4);
+  }
+  width: span(6);
+}
+
+.sponsor--silver {
+  @include breakpoint($up-sm){
+    width: span(3);
+  }
+}
+
+.sponsor--bronze,
+.sponsor--partner {
+  @include breakpoint($up-sm){
+    width: span(2);
+  }
+}
+
+.sponsor__name {
+  text-align: center;
+}

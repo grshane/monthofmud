@@ -9,8 +9,19 @@ fontawesome:
   css:
     component:
       '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css': {type: external}
+typekit:
+  version: 1.x
+  header: true
+  js:
+    //use.typekit.net/kjh7veh.js: { every_page: true }
+    js/custom.js: { every_page: true }
 global_styles:
-  version: VERSION
+  version: 1.x
   css:
     theme:
       css/styles.css: {}
+  js:
+    js/theme.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

@@ -7,7 +7,7 @@
 // Style guide: components.header
 
 .header--primary {
-  background: sandybrown;
+  background: #7a6aff;
 
 }
 .menu--main {
@@ -27,7 +27,6 @@
 
 
 .region-header {
-  @include region-spacer($light-gray);
   display: flex;
   justify-content: space-between;
   align-items: center;
