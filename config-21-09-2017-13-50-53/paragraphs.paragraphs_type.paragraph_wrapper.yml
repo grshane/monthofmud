@@ -1,9 +1,0 @@
-uuid: 37dabde2-92eb-4327-8666-ae8f7312f3d1
-langcode: en
-status: true
-dependencies: {  }
-id: paragraph_wrapper
-label: 'Paragraph Wrapper'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

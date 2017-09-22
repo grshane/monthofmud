@@ -4,9 +4,10 @@ status: true
 dependencies:
   config:
     - entity_browser.browser.asset_entity_browser_
+    - field.field.node.spon.field_other
     - field.field.node.spon.field_spon_level_ref
     - field.field.node.spon.field_spon_link
-    - field.field.node.spon.field_spon_logo_ref
+    - field.field.node.spon.field_spon_logo
     - node.type.spon
   module:
     - entity_browser
@@ -16,6 +17,19 @@ targetEntityType: node
 bundle: spon
 mode: default
 content:
+  field_other:
+    weight: 26
+    settings:
+      entity_browser: asset_entity_browser_
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
   field_spon_level_ref:
     weight: 3
     settings: {  }
@@ -30,18 +44,18 @@ content:
     third_party_settings: {  }
     type: link_default
     region: content
-  field_spon_logo_ref:
-    weight: 27
+  field_spon_logo:
+    weight: 1
     settings:
       entity_browser: asset_entity_browser_
-      field_widget_display: label
-      field_widget_edit: true
       field_widget_remove: true
       open: true
-      selection_mode: selection_edit
-      field_widget_display_settings: {  }
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_browser_entity_reference
+    type: entity_browser_file
     region: content
   title:
     type: string_textfield

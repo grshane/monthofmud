@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.spon.field_other
     - field.field.node.spon.field_spon_level_ref
     - field.field.node.spon.field_spon_link
-    - field.field.node.spon.field_spon_logo_ref
+    - field.field.node.spon.field_spon_logo
     - node.type.spon
   module:
     - field_formatter_class
+    - image
     - link
     - user
 id: node.spon.default
@@ -16,6 +18,14 @@ targetEntityType: node
 bundle: spon
 mode: default
 content:
+  field_other:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_spon_level_ref:
     weight: 2
     label: hidden
@@ -37,13 +47,16 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_spon_logo_ref:
-    weight: 4
-    label: above
+  field_spon_logo:
+    weight: 0
+    label: hidden
     settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: image
     region: content
 hidden:
   links: true
