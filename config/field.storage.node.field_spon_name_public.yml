@@ -1,16 +1,17 @@
-uuid: 9feb26dc-2c27-4df9-9968-cacd427a1618
+uuid: 22bb5c83-7d6b-458b-8eff-1731a39f3411
 langcode: en
 status: true
 dependencies:
   module:
-    - media_entity
     - node
-id: node.field_other
-field_name: field_other
+id: node.field_spon_name_public
+field_name: field_spon_name_public
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: media
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

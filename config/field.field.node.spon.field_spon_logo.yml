@@ -1,12 +1,21 @@
-uuid: b2c4627e-7fbc-414e-a047-e88741bd5b02
+uuid: ebdcb70d-84ea-4902-b985-e58b7341408d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_spon_logo
+    - media_entity.bundle.images
     - node.type.spon
   module:
-    - image
+    - entityconnect
+third_party_settings:
+  entityconnect:
+    buttons:
+      button_add: '1'
+      button_edit: '1'
+    icons:
+      icon_add: '0'
+      icon_edit: '0'
 id: node.spon.field_spon_logo
 field_name: field_spon_logo
 entity_type: node
@@ -18,21 +27,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
-  max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: true
-  alt_field_required: false
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: image
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
