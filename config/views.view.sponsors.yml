@@ -1,6 +1,6 @@
 uuid: 3458b93d-c6f1-40c3-8130-61f9538252c9
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -266,9 +266,9 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          view: sponsor_list
+          view: sponsor_inner
           display: default
-          arguments: '{{ raw_fields.tid }} '
+          arguments: '{{ raw_fields.tid }}'
           plugin_id: view
       filters:
         vid:
