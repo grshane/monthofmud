@@ -986,6 +986,28 @@ nav.breadcrumb ol li:first-child::before {
   font-weight: bold;
 }
 
+form.entity-browser-asset-entity-browser__form {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.eb-tabs,
+.form-actions {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.view-id-asset_browser {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 400px;
+  overflow-y: auto;
+  position: relative;
+}
+
 .region-footer {
   border-top: 1px dotted #b3b3b3;
   padding-top: 25px;
