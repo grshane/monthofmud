@@ -1,0 +1,18 @@
+form.entity-browser-asset-entity-browser__form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+  .eb-tabs,
+  .form-actions {
+    flex: 0 0 auto;
+  }
+
+  .view-id-asset_browser {
+    flex: 1 1 auto;
+    height: 400px;
+    overflow-y: auto;
+    position: relative;
+  }
+  

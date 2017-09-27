@@ -986,6 +986,28 @@ nav.breadcrumb ol li:first-child::before {
   font-weight: bold;
 }
 
+form.entity-browser-asset-entity-browser__form {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.eb-tabs,
+.form-actions {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.view-id-asset_browser {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 400px;
+  overflow-y: auto;
+  position: relative;
+}
+
 .region-footer {
   border-top: 1px dotted #b3b3b3;
   padding-top: 25px;
@@ -1190,14 +1212,19 @@ nav.breadcrumb ol li:first-child::before {
   display: none;
 }
 
-.sponsor__class {
-  background: #b3b3b3;
-}
-
 .sponsor__class .sponsor__class--title {
   text-align: center;
   font-family: "crackhouse";
   font-size: 250%;
+}
+
+.sponsor__class .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .view-sponsor-list .view-content {
@@ -1232,6 +1259,11 @@ nav.breadcrumb ol li:first-child::before {
 
 .sponsor__name {
   text-align: center;
+}
+
+.sponsor .sponsor__logo img {
+  max-height: 100px;
+  width: auto;
 }
 
 .block-tabs,
@@ -1271,7 +1303,7 @@ button:hover {
 }
 
 /* stylelint-disable */
-.paragraph--type--paragraph-wrapper, .race__all--block .race--all--block, .sponsor__class {
+.paragraph--type--paragraph-wrapper, .race__all--block .race--all--block {
   width: 100vw;
   margin-right: -50vw;
   margin-left: -50vw;

@@ -1,6 +1,4 @@
 .sponsor__class {
-  @extend %is-fullwidth;
-  background: $light-gray;
   .view-sponsor-list {
     @extend .mq-main;
   }
@@ -9,12 +7,18 @@
     font-family: $crackhouse;
     font-size: 250%;
   }
+  .view-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .view-sponsor-list {
   .view-content {
     display: flex;
     justify-content: space-around;
+
   }
 }
 
@@ -40,4 +44,16 @@
 
 .sponsor__name {
   text-align: center;
+}
+
+.sponsor {
+  .sponsor__title {
+
+  }
+  .sponsor__logo {
+    img {
+      max-height: 100px;
+      width: auto;
+    }
+  }
 }

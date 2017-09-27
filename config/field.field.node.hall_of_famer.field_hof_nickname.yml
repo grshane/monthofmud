@@ -1,0 +1,19 @@
+uuid: ebdb93d7-0ffc-4ce5-b14d-353b61824168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hof_nickname
+    - node.type.hall_of_famer
+id: node.hall_of_famer.field_hof_nickname
+field_name: field_hof_nickname
+entity_type: node
+bundle: hall_of_famer
+label: Nickname
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

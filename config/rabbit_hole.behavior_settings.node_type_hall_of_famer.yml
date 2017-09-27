@@ -1,0 +1,9 @@
+uuid: b4517e8a-81c1-4ad9-99ca-e4d0bf571b59
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_hall_of_famer
+action: page_redirect
+allow_override: 1
+redirect: /hall-of-fame
+redirect_code: 301

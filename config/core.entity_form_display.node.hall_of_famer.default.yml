@@ -1,0 +1,59 @@
+uuid: d7e95fb3-4dc4-4b1a-9af5-9a40417fe1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hall_of_famer.field_hof_first_name
+    - field.field.node.hall_of_famer.field_hof_induction_date
+    - field.field.node.hall_of_famer.field_hof_last_name
+    - field.field.node.hall_of_famer.field_hof_nickname
+    - node.type.hall_of_famer
+id: node.hall_of_famer.default
+targetEntityType: node
+bundle: hall_of_famer
+mode: default
+content:
+  field_hof_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hof_induction_date:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_hof_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hof_nickname:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
