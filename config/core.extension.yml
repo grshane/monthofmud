@@ -64,6 +64,10 @@ module:
   redirect: 0
   redirect_404: 0
   rewrite_field: 0
+  rh_media: 0
+  rh_node: 0
+  rh_taxonomy: 0
+  rh_user: 0
   rules: 0
   search: 0
   shortcut: 0

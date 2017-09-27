@@ -1,0 +1,9 @@
+uuid: 7bcf2296-59b2-4d47-b8b5-9d796d3362bb
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_spon
+action: page_redirect
+allow_override: 1
+redirect: /sponsors
+redirect_code: 301
