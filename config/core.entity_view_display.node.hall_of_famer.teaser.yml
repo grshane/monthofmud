@@ -1,0 +1,18 @@
+uuid: 771c736a-ce90-4536-b26f-f93c50759559
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.hall_of_famer
+  module:
+    - user
+id: node.hall_of_famer.teaser
+targetEntityType: node
+bundle: hall_of_famer
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

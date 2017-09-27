@@ -2,10 +2,13 @@ node_type_race_status: '1'
 node_type_race_pattern: '[node:field_race_title_public]-[node:field_race_date:date:html_year]'
 node_type_race_php: 0
 submit: 'Save configuration'
-form_build_id: form-3CoMCJVYUUhhmJQMrBHId-ct804lRwA4CNJoeKTqorg
-form_token: nNxFO3W6nnLZb_zQdHNOYgwX8DfJvbZA430o-wu54VA
+form_build_id: form-j-kXSReOPOpa94ZXdFzgokYiA5GpjVNARnRI5HqVzO8
+form_token: OQxBi6-VYyXxGnQRljOOeNod27YcH6gcuoIUJ7jFeEU
 form_id: auto_entitylabel_settings_form
 op: 'Save configuration'
 node_type_spon_status: '1'
 node_type_spon_pattern: '[node:field_spon_name_public]'
 node_type_spon_php: 0
+node_type_hall_of_famer_status: '1'
+node_type_hall_of_famer_pattern: 'HOF [node:field_hof_first_name] [node:field_hof_last_name]'
+node_type_hall_of_famer_php: 0

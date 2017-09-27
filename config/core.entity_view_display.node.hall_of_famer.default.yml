@@ -1,0 +1,53 @@
+uuid: d5e3c66d-d35e-4bf2-8a15-f52ffc5698b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.hall_of_famer.field_hof_first_name
+    - field.field.node.hall_of_famer.field_hof_induction_date
+    - field.field.node.hall_of_famer.field_hof_last_name
+    - field.field.node.hall_of_famer.field_hof_nickname
+    - node.type.hall_of_famer
+  module:
+    - options
+    - user
+id: node.hall_of_famer.default
+targetEntityType: node
+bundle: hall_of_famer
+mode: default
+content:
+  field_hof_first_name:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: string
+    region: content
+  field_hof_induction_date:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_hof_last_name:
+    weight: 1
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_hof_nickname:
+    weight: 2
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  links: true

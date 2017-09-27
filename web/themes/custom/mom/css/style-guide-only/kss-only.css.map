@@ -1,0 +1,1 @@
+{"version":3,"sources":["kss-only.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,mBAAmB;CACpB","file":"kss-only.css","sourcesContent":["div.kss-modifier__wrapper > * {\n  width: 100%;\n  position: relative;\n}\n"]}
