@@ -1196,6 +1196,15 @@ nav.breadcrumb ol li:first-child::before {
   font-size: 250%;
 }
 
+.sponsor__class .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .view-sponsor-list .view-content {
   display: -ms-flexbox;
   display: flex;
@@ -1228,6 +1237,11 @@ nav.breadcrumb ol li:first-child::before {
 
 .sponsor__name {
   text-align: center;
+}
+
+.sponsor .sponsor__logo img {
+  max-height: 100px;
+  width: auto;
 }
 
 .block-tabs,
@@ -1267,7 +1281,7 @@ button:hover {
 }
 
 /* stylelint-disable */
-.paragraph--type--paragraph-wrapper, .race__all--block .race--all--block, .sponsor__class {
+.paragraph--type--paragraph-wrapper, .race__all--block .race--all--block {
   width: 100vw;
   margin-right: -50vw;
   margin-left: -50vw;
