@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.hall_of_famer.field_hof_nickname
     - node.type.hall_of_famer
   module:
-    - options
     - user
 id: node.hall_of_famer.default
 targetEntityType: node
@@ -29,9 +28,11 @@ content:
   field_hof_induction_date:
     weight: 3
     label: above
-    settings: {  }
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: list_default
+    type: number_integer
     region: content
   field_hof_last_name:
     weight: 1

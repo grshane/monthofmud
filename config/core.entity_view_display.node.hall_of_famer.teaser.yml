@@ -15,4 +15,8 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_hof_first_name: true
+  field_hof_induction_date: true
+  field_hof_last_name: true
+  field_hof_nickname: true

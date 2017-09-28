@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff1e67ccdcb062584e1679c9e2b68336",
+    "content-hash": "4716e809e428964506c87ebdf1afe599",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2387,6 +2387,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/contact_formatter",
                 "issues": "https://www.drupal.org/project/issues/contact_formatter"
+            }
+        },
+        {
+            "name": "drupal/contentimport",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/contentimport",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/contentimport-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "013ee3dc46dd04fad0e815cb46ebe153c62b03e6"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1502102944",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dhayanandan_k",
+                    "homepage": "https://www.drupal.org/user/3534286"
+                }
+            ],
+            "description": "To Import content from CSV file",
+            "homepage": "https://www.drupal.org/project/contentimport",
+            "support": {
+                "source": "http://cgit.drupalcode.org/contentimport"
             }
         },
         {

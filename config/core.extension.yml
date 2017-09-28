@@ -17,6 +17,7 @@ module:
   config_direct_save: 0
   config_update: 0
   contact: 0
+  contentimport: 0
   contextual: 0
   ctools: 0
   datetime: 0

@@ -2,6 +2,11 @@ uuid: 44873f03-98a2-4e6c-be7a-e6d131742930
 langcode: en
 status: true
 dependencies: {  }
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'
