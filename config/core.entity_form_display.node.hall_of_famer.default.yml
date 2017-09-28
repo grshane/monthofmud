@@ -22,10 +22,11 @@ content:
     type: string_textfield
     region: content
   field_hof_induction_date:
-    weight: 4
-    settings: {  }
+    weight: 26
+    settings:
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: number
     region: content
   field_hof_last_name:
     weight: 2
