@@ -1239,6 +1239,28 @@ nav.breadcrumb ol li:first-child::before {
   text-align: center;
 }
 
+.sponsor {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin-bottom: 1em;
+}
+
+.sponsor .sponsor__logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
 .sponsor .sponsor__logo img {
   max-height: 100px;
   width: auto;

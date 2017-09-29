@@ -13,8 +13,20 @@ typekit:
   version: 1.x
   header: true
   js:
-    //use.typekit.net/kjh7veh.js: { every_page: true }
-    js/custom.js: { every_page: true }
+    //use.typekit.net/kjh7veh.js: { type: external, every_page: true }
+    js/theme.js: { every_page: true }
+  dependencies:
+    - core/jquery
+    - core/drupal
+home_accordion:
+  version: 1.x
+  js:
+    theme:
+      js/home.js: {every_page: true}
+      js/jquery.debouncedresize.js: {}
+      js/jquery.accAccordion.min.js: {}
+  dependencies:
+    - core/jquery
 global_styles:
   version: 1.x
   css:

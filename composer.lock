@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff1e67ccdcb062584e1679c9e2b68336",
+    "content-hash": "4e7b0f806ea0c3f77bdf9faed8542a1b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1959,7 +1959,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.4",
-                    "datestamp": "1488072484"
+                    "datestamp": "1506257944",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2383,6 +2387,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/contact_formatter",
                 "issues": "https://www.drupal.org/project/issues/contact_formatter"
+            }
+        },
+        {
+            "name": "drupal/contentimport",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/contentimport",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/contentimport-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "013ee3dc46dd04fad0e815cb46ebe153c62b03e6"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1502102944",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "dhayanandan_k",
+                    "homepage": "https://www.drupal.org/user/3534286"
+                }
+            ],
+            "description": "To Import content from CSV file",
+            "homepage": "https://www.drupal.org/project/contentimport",
+            "support": {
+                "source": "http://cgit.drupalcode.org/contentimport"
             }
         },
         {
@@ -3904,7 +3955,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.1",
-                    "datestamp": "1470845408",
+                    "datestamp": "1506372845",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4801,6 +4852,65 @@
                 "source": "http://cgit.drupalcode.org/rules"
             },
             "time": "2017-05-25 20:23:56"
+        },
+        {
+            "name": "drupal/semanticviews",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/semanticviews",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/semanticviews-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "c60319ca9cbfd1b1c143bffb619cf7c8a45b4e95"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1490543884",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Anonymous",
+                    "homepage": "https://www.drupal.org/user/0"
+                },
+                {
+                    "name": "Scyther",
+                    "homepage": "https://www.drupal.org/user/613694"
+                },
+                {
+                    "name": "jpamental",
+                    "homepage": "https://www.drupal.org/user/174960"
+                },
+                {
+                    "name": "nicxvan",
+                    "homepage": "https://www.drupal.org/user/531480"
+                }
+            ],
+            "description": "Views plugins for UI management of output markup",
+            "homepage": "https://www.drupal.org/project/semanticviews",
+            "support": {
+                "source": "http://cgit.drupalcode.org/semanticviews"
+            }
         },
         {
             "name": "drupal/simple_block",
