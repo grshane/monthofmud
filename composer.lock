@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4716e809e428964506c87ebdf1afe599",
+    "content-hash": "1c1db0ff48d3a2db93baa3db52f4555f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1709,17 +1709,17 @@
         },
         {
             "name": "drupal/cog",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/cog",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cog-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "93bceeb46f2204b818be72985ac43271b6daed7b"
+                "url": "https://ftp.drupal.org/files/projects/cog-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "a126dea702501a65bf68112708cc1e37ab9ab79c"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1730,8 +1730,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1505510943",
+                    "version": "8.x-1.10",
+                    "datestamp": "1506720843",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1890,7 +1890,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/conditional_fields"
             },
-            "time": "2017-07-12 14:36:37"
+            "time": "2017-07-12T14:36:37+00:00"
         },
         {
             "name": "drupal/config_direct_save",
@@ -4333,6 +4333,154 @@
             }
         },
         {
+            "name": "drupal/page_manager",
+            "version": "4.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/page_manager",
+                "reference": "8.x-4.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/page_manager-8.x-4.0-beta2.zip",
+                "reference": "8.x-4.0-beta2",
+                "shasum": "29a4dda0f068b5df5971eb8319c675cd8e5c78b3"
+            },
+            "require": {
+                "drupal/core": "^8.0.5",
+                "drupal/ctools": "~3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.0-beta2",
+                    "datestamp": "1493410443",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tim Plunkett",
+                    "homepage": "https://www.drupal.org/u/tim.plunkett",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "dsnopek",
+                    "homepage": "https://www.drupal.org/user/266527"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Provides a way to place blocks on a custom page.",
+            "homepage": "https://www.drupal.org/project/page_manager",
+            "support": {
+                "source": "https://git.drupal.org/project/page_manager.git",
+                "issues": "https://www.drupal.org/project/issues/page_manager",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/panels",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/panels",
+                "reference": "8.x-4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/panels-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "6991377531eafaec09f9c7a31e091592e455137b"
+            },
+            "require": {
+                "drupal/core": "^8.3",
+                "drupal/ctools": ">=3.0.0"
+            },
+            "require-dev": {
+                "drupal/page_manager": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-4.x": "4.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-4.2",
+                    "datestamp": "1500497642",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jakob Perry",
+                    "homepage": "https://www.drupal.org/u/japerry"
+                },
+                {
+                    "name": "Samuel Mortenson",
+                    "homepage": "https://www.drupal.org/u/samuel.mortenson"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/74958/committers"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "samuel.mortenson",
+                    "homepage": "https://www.drupal.org/user/2582268"
+                },
+                {
+                    "name": "sdboyer",
+                    "homepage": "https://www.drupal.org/user/146719"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
+            "homepage": "https://www.drupal.org/project/panels",
+            "support": {
+                "source": "http://git.drupal.org/project/panels.git",
+                "issues": "https://www.drupal.org/project/issues/panels",
+                "irc": "irc://irc.freenode.org/drupal-scotch"
+            }
+        },
+        {
             "name": "drupal/paragraphs",
             "version": "dev-1.x",
             "source": {
@@ -4398,7 +4546,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
             },
-            "time": "2017-09-20 06:26:03"
+            "time": "2017-09-20T06:26:03+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -4463,23 +4611,24 @@
         },
         {
             "name": "drupal/rabbit_hole",
-            "version": "1.0.0-beta3",
+            "version": "1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/rabbit_hole",
-                "reference": "8.x-1.0-beta3"
+                "reference": "8.x-1.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rabbit_hole-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
-                "shasum": "cb9138d370a7015a1b060b5504f6a1c6fc7f26eb"
+                "url": "https://ftp.drupal.org/files/projects/rabbit_hole-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "ef2917a8b53b7576ac8df6bda1a39d93053cd831"
             },
             "require": {
                 "drupal/core": "~8.0"
             },
             "require-dev": {
                 "drupal/file_entity": "*",
+                "drupal/group": "*",
                 "drupal/media_entity": "*"
             },
             "type": "drupal-module",
@@ -4488,8 +4637,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta3",
-                    "datestamp": "1491779583",
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1506790444",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4812,11 +4961,16 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/rules",
-                "reference": "5e454adb9aaacd09aea8370978f0e721251be948"
+                "reference": "da7931d43ae1da607c981d96405f38732f37ddbd"
             },
             "require": {
                 "drupal/core": "~8.0",
                 "drupal/typed_data": "*"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+                "drupal/coder": "2.*",
+                "squizlabs/php_codesniffer": "2.9.*"
             },
             "type": "drupal-module",
             "extra": {
@@ -4824,8 +4978,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha3+1-dev",
-                    "datestamp": "1495744084",
+                    "version": "8.x-3.0-alpha3+2-dev",
+                    "datestamp": "1506344943",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4851,7 +5005,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/rules"
             },
-            "time": "2017-09-18 11:27:01"
+            "time": "2017-09-30T08:11:35+00:00"
         },
         {
             "name": "drupal/simple_block",
@@ -4981,7 +5135,7 @@
                 "source": "http://cgit.drupalcode.org/stripe",
                 "issues": "https://www.drupal.org/project/issues/stripe"
             },
-            "time": "2017-06-01 19:16:13"
+            "time": "2017-06-01T19:16:13+00:00"
         },
         {
             "name": "drupal/superfish",
@@ -5328,7 +5482,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views"
             },
-            "time": "2012-10-22 03:07:01"
+            "time": "2012-10-22T03:07:01+00:00"
         },
         {
             "name": "drupal/views_conditional",
@@ -5379,7 +5533,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_conditional"
             },
-            "time": "2017-04-06 13:26:57"
+            "time": "2017-04-06T13:26:57+00:00"
         },
         {
             "name": "drupal/views_field_view",
@@ -5437,7 +5591,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_field_view"
             },
-            "time": "2016-05-23 21:05:06"
+            "time": "2016-05-23T21:05:06+00:00"
         },
         {
             "name": "drupal/viewsreference",
@@ -5503,17 +5657,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.0.0-beta18",
+            "version": "5.0.0-beta19",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/webform",
-                "reference": "8.x-5.0-beta18"
+                "reference": "8.x-5.0-beta19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta18.zip",
-                "reference": "8.x-5.0-beta18",
-                "shasum": "575131825e6ff730c14ede7cfd763c849f0ba485"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.0-beta19.zip",
+                "reference": "8.x-5.0-beta19",
+                "shasum": "c117f293e1f009a86adfd7cff1007e4e89b2c5fd"
             },
             "require": {
                 "drupal/core": "*"
@@ -5524,8 +5678,8 @@
                     "dev-5.x": "5.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta18",
-                    "datestamp": "1505244243",
+                    "version": "8.x-5.0-beta19",
+                    "datestamp": "1506634743",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -11326,6 +11480,7 @@
         "drupal/geocoder": 15,
         "drupal/inline_entity_form": 10,
         "drupal/media_entity_browser": 10,
+        "drupal/page_manager": 10,
         "drupal/paragraphs": 20,
         "drupal/rabbit_hole": 10,
         "drupal/reroute_email": 10,
