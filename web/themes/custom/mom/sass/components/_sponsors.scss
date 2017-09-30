@@ -47,13 +47,25 @@
 }
 
 .sponsor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: baseline;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
   .sponsor__title {
 
   }
   .sponsor__logo {
+    flex: 1 0 auto;
+    width: 100%;
     img {
       max-height: 100px;
       width: auto;
     }
+  }
+  a {
+
   }
 }

@@ -1261,6 +1261,27 @@ form.entity-browser-asset-entity-browser__form {
   text-align: center;
 }
 
+.sponsor {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: baseline;
+  align-content: baseline;
+  text-align: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
+}
+
+.sponsor .sponsor__logo {
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
 .sponsor .sponsor__logo img {
   max-height: 100px;
   width: auto;
