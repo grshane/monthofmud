@@ -63,7 +63,11 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_hof_induction_date
+              rendered: true
+              rendered_strip: true
           row_class: hof
           default_row_class: false
       row:
@@ -319,8 +323,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Induction Date'
-          exclude: false
+          label: 'Induction Year'
+          exclude: true
           alter:
             alter_text: false
             text: ''
