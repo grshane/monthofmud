@@ -1,14 +1,14 @@
-uuid: 3fc01efd-46d2-4393-9bf8-54532b10b6be
+uuid: 065507c2-1f22-4984-a877-4eba8f0b1388
 langcode: en
 status: true
 dependencies:
   module:
     - ctools
-id: races
-label: Races
+id: race_page
+label: 'Race page'
 description: ''
 use_admin_theme: false
-path: '/race/{field_race_date:date:html_year}-{field_race_title_public}'
+path: '/race/{field_race_title_public}'
 access_logic: and
 access_conditions:
   -
@@ -22,4 +22,4 @@ parameters:
   field_race_title_public:
     machine_name: field_race_title_public
     type: 'entity:node'
-    label: ''
+    label: Field_race_title_public

@@ -858,6 +858,24 @@ body #pg__c.page-panel section#content > #content-area {
   }
 }
 
+.cog-layout--middle-right .block-entity-fieldnodefield-race-bike-reg h2 {
+  display: none;
+}
+
+.cog-layout--middle-right .field--name-field-race-bike-reg {
+  padding-top: 1.2em;
+}
+
+.cog-layout--middle-right .field--name-field-race-bike-reg .field__label {
+  display: none;
+}
+
+.cog-layout--middle-right .field--name-field-race-bike-reg .field__item a {
+  background: #e1ba6b;
+  padding: 0.5em 1em;
+  color: #7a6aff;
+}
+
 @media only screen and (min-width: 768px) {
   .body-sidebars-first aside.sidebar-first {
     width: 23.72881%;

@@ -15,29 +15,23 @@ dependencies:
     - datetime
     - field_formatter_class
     - link
-    - panelizer
+    - media_entity
     - text
     - user
-third_party_settings:
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
 id: node.race.default
 targetEntityType: node
 bundle: race
 mode: default
 content:
   field_race_addr:
-    weight: 1
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_race_bike_reg:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       trim_length: 80
@@ -51,7 +45,7 @@ content:
     type: link
     region: content
   field_race_date:
-    weight: 0
+    weight: 1
     label: visually_hidden
     settings:
       timezone_override: ''
@@ -62,15 +56,15 @@ content:
     type: datetime_default
     region: content
   field_race_imag:
-    weight: 3
+    weight: 0
     label: hidden
     settings:
-      view_mode: default
-      link: false
+      image_style: ''
+      image_link: ''
     third_party_settings:
       field_formatter_class:
         class: ''
-    type: entity_reference_entity_view
+    type: media_thumbnail
     region: content
   field_race_info:
     weight: 4

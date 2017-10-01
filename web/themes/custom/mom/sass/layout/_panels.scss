@@ -146,3 +146,24 @@ body #pg__c.page-panel section#content > #content-area {
     }
   }
 }
+
+.cog-layout--middle-right {
+  .block-entity-fieldnodefield-race-bike-reg {
+    h2 {
+      display: none;
+    }
+  }
+  .field--name-field-race-bike-reg {
+    padding-top: 1.2em;
+    .field__label {
+      display: none;
+    }
+    .field__item {
+      a {
+        background: $yellow;
+        padding: 0.5em 1em;
+        color: $accent;
+      }
+    }
+  }
+}

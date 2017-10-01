@@ -1,0 +1,84 @@
+uuid: 7289f413-1f8b-4079-9e47-b3a893a52462
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.race_page
+  module:
+    - ctools_block
+    - panels
+id: race_page-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    4a9f547c-c3de-4678-a6df-f440b38a4625:
+      id: 'entity_field:node:field_race_imag'
+      label: 'Race Image'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: media_thumbnail
+        settings:
+          image_style: ''
+          image_link: ''
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: 0
+      uuid: 4a9f547c-c3de-4678-a6df-f440b38a4625
+      context_mapping:
+        entity: field_race_title_public
+    7ea08ce2-7d40-4046-8b8a-1c21573ae45b:
+      id: 'entity_field:node:field_race_addr'
+      label: 'Race Address'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: hidden
+        type: address_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: middle_right
+      weight: 0
+      uuid: 7ea08ce2-7d40-4046-8b8a-1c21573ae45b
+      context_mapping:
+        entity: field_race_title_public
+    52d290ee-f95b-46ff-993c-28633804e350:
+      id: 'entity_field:node:field_race_bike_reg'
+      label: 'Bike Reg'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: link
+        settings:
+          trim_length: 80
+          url_only: false
+          url_plain: false
+          rel: '0'
+          target: '0'
+        third_party_settings: {  }
+        weight: 0
+      region: middle_right
+      weight: 0
+      uuid: 52d290ee-f95b-46ff-993c-28633804e350
+      context_mapping:
+        entity: field_race_title_public
+  id: panels_variant
+  uuid: 98ada1d8-a662-4b66-830f-1bff1da249f1
+  label: null
+  weight: 0
+  layout: one_two_one
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: race_page-panels_variant-0
+  builder: standard
+page: race_page
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
