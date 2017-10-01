@@ -160,10 +160,14 @@ body #pg__c.page-panel section#content > #content-area {
     }
     .field__item {
       a {
-        background: $yellow;
-        padding: 0.5em 1em;
-        color: $accent;
+
       }
     }
   }
+}
+
+.bikereg--block {
+  background: $yellow;
+  padding: 0.5em 1em;
+  color: $accent;
 }

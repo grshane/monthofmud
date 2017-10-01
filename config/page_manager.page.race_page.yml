@@ -8,7 +8,7 @@ id: race_page
 label: 'Race page'
 description: ''
 use_admin_theme: false
-path: '/race/{field_race_title_public}'
+path: '/race/{node:field_race_date:date:html_year}-{node:field_race_title_public}'
 access_logic: and
 access_conditions:
   -
@@ -18,8 +18,4 @@ access_conditions:
     negate: false
     context_mapping:
       node: field_race_title_public
-parameters:
-  field_race_title_public:
-    machine_name: field_race_title_public
-    type: 'entity:node'
-    label: Field_race_title_public
+parameters: {  }

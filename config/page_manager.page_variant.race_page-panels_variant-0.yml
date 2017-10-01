@@ -26,7 +26,7 @@ variant_settings:
         third_party_settings: {  }
         weight: 0
       region: top
-      weight: 0
+      weight: -1
       uuid: 4a9f547c-c3de-4678-a6df-f440b38a4625
       context_mapping:
         entity: field_race_title_public
@@ -65,6 +65,39 @@ variant_settings:
       region: middle_right
       weight: 0
       uuid: 52d290ee-f95b-46ff-993c-28633804e350
+      context_mapping:
+        entity: field_race_title_public
+    6a5a0cb6-a08a-4b85-94a0-1ef19eb8b06e:
+      id: 'entity_field:node:field_race_info'
+      label: 'Race Information'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: above
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: middle_left
+      weight: 0
+      uuid: 6a5a0cb6-a08a-4b85-94a0-1ef19eb8b06e
+      context_mapping:
+        entity: field_race_title_public
+    50ba5f8d-7e17-42ae-9b8e-dd7eed24a6e0:
+      id: 'entity_field:node:title'
+      label: Title
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: string
+        settings:
+          link_to_entity: false
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: -2
+      uuid: 50ba5f8d-7e17-42ae-9b8e-dd7eed24a6e0
       context_mapping:
         entity: field_race_title_public
   id: panels_variant

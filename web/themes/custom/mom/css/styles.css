@@ -870,7 +870,7 @@ body #pg__c.page-panel section#content > #content-area {
   display: none;
 }
 
-.cog-layout--middle-right .field--name-field-race-bike-reg .field__item a {
+.bikereg--block {
   background: #e1ba6b;
   padding: 0.5em 1em;
   color: #7a6aff;
