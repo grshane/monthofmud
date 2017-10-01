@@ -7,16 +7,16 @@ dependencies:
 id: race_label
 label: 'Race Label'
 type: 'canonical_entities:node'
-pattern: '[node:field_race_date:date:html_year]/[node:field_race_title_public]'
+pattern: 'race/[node:field_race_date:date:html_year]-[node:field_race_title_public]'
 selection_criteria:
-  54256aea-c97b-45ac-add2-a18b89db0863:
+  d8c35718-2b08-4f90-8ca8-26d935145845:
     id: node_type
     bundles:
       race: race
     negate: false
     context_mapping:
       node: node
-    uuid: 54256aea-c97b-45ac-add2-a18b89db0863
+    uuid: d8c35718-2b08-4f90-8ca8-26d935145845
 selection_logic: and
 weight: -5
 relationships: {  }

@@ -1,0 +1,139 @@
+uuid: 94c9dda1-5673-4892-a0fb-4915a2c432a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.races
+    - views.view.sponsors
+  module:
+    - ctools
+    - ctools_block
+    - panels
+    - views
+id: races-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    d266bdc0-3288-4053-9d8e-ee6965a82fa0:
+      id: 'entity_field:node:field_race_info'
+      label: 'Race Information'
+      provider: ctools_block
+      label_display: visible
+      formatter:
+        label: visually_hidden
+        type: text_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: middle_left
+      weight: 0
+      uuid: d266bdc0-3288-4053-9d8e-ee6965a82fa0
+      context_mapping:
+        entity: race
+    1ac93098-cc9c-4dc0-9ce2-9da3ee0ef01b:
+      id: 'entity_field:node:field_race_imag'
+      label: 'Race Image'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: media_thumbnail
+        settings:
+          image_style: ''
+          image_link: ''
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: 0
+      uuid: 1ac93098-cc9c-4dc0-9ce2-9da3ee0ef01b
+      context_mapping:
+        entity: field_race_title_public
+    20a509be-efe1-4ebf-af11-aab6f1a27e64:
+      id: 'views_block:sponsors-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: '40'
+      region: bottom
+      weight: 0
+      uuid: 20a509be-efe1-4ebf-af11-aab6f1a27e64
+      context_mapping: {  }
+    011da725-b5d8-481a-a991-784cdb9dfa35:
+      id: 'entity_field:node:field_race_bike_reg'
+      label: 'Bike Reg'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: link
+        settings:
+          trim_length: 80
+          url_only: false
+          url_plain: false
+          rel: nofollow
+          target: '0'
+        third_party_settings: {  }
+        weight: 0
+      region: middle_right
+      weight: 0
+      uuid: 011da725-b5d8-481a-a991-784cdb9dfa35
+      context_mapping:
+        entity: field_race_title_public
+    bce08f22-462c-49b7-8bb8-7a2ae9a01570:
+      id: 'entity_field:node:field_race_addr'
+      label: 'Race Address'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: above
+        type: address_default
+        settings: {  }
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: 0
+      uuid: bce08f22-462c-49b7-8bb8-7a2ae9a01570
+      context_mapping:
+        entity: field_race_title_public
+    13887bce-92f8-4e49-822e-a1112ba54554:
+      id: 'entity_field:node:field_race_date'
+      label: 'Race Date'
+      provider: ctools_block
+      label_display: '0'
+      formatter:
+        label: hidden
+        type: datetime_default
+        settings:
+          timezone_override: ''
+          format_type: race_listing
+        third_party_settings: {  }
+        weight: 0
+      region: top
+      weight: 0
+      uuid: 13887bce-92f8-4e49-822e-a1112ba54554
+      context_mapping:
+        entity: field_race_title_public
+  id: panels_variant
+  uuid: 8a8f6a7f-ab45-4046-9902-e122138cf14c
+  label: null
+  weight: 0
+  layout: one_two_one
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: races-panels_variant-0
+  builder: standard
+page: races
+weight: 0
+selection_criteria:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: field_race_title_public
+selection_logic: and
+static_context: {  }

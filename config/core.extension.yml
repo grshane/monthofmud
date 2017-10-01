@@ -7,6 +7,7 @@ module:
   automated_cron: 0
   block: 0
   block_class: 0
+  block_content: 0
   breakpoint: 0
   ckeditor: 0
   coffee: 0
@@ -20,6 +21,7 @@ module:
   contentimport: 0
   contextual: 0
   ctools: 0
+  ctools_block: 0
   datetime: 0
   dblog: 0
   devel: 0
@@ -48,6 +50,7 @@ module:
   image: 0
   inline_entity_form: 0
   kint: 0
+  layout_discovery: 0
   link: 0
   media_entity: 0
   media_entity_browser: 0
@@ -56,6 +59,11 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  page_manager: 0
+  page_manager_ui: 0
+  panelizer: 0
+  panels: 0
+  panels_ipe: 0
   paragraphs: 0
   path: 0
   pathauto: 0

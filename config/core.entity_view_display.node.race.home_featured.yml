@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.race.field_race_bike_reg
     - field.field.node.race.field_race_date
     - field.field.node.race.field_race_imag
+    - field.field.node.race.field_race_info
     - field.field.node.race.field_race_title_public
     - node.type.race
   module:
@@ -24,7 +25,7 @@ content:
     label: above
     settings:
       timezone_override: ''
-      format_type: long
+      format_type: race_listing
     third_party_settings:
       field_formatter_class:
         class: ''
@@ -52,4 +53,5 @@ content:
 hidden:
   field_race_addr: true
   field_race_bike_reg: true
+  field_race_info: true
   links: true

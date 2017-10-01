@@ -1,0 +1,25 @@
+uuid: 3fc01efd-46d2-4393-9bf8-54532b10b6be
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: races
+label: Races
+description: ''
+use_admin_theme: false
+path: '/race/{field_race_date:date:html_year}-{field_race_title_public}'
+access_logic: and
+access_conditions:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: field_race_title_public
+parameters:
+  field_race_title_public:
+    machine_name: field_race_title_public
+    type: 'entity:node'
+    label: ''

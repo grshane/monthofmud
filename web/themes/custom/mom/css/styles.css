@@ -697,6 +697,7 @@ form input[disabled] {
 
 #pg__c.page-panel .mq-main, #pg__c.page-panel .sponsor__class .view-sponsor-list, .sponsor__class #pg__c.page-panel .view-sponsor-list {
   max-width: 100%;
+  padding: 0 5%;
 }
 
 body #pg__c.page-panel section#content > #content-area {

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.race.field_race_bike_reg
     - field.field.node.race.field_race_date
     - field.field.node.race.field_race_imag
+    - field.field.node.race.field_race_info
     - field.field.node.race.field_race_title_public
     - node.type.race
   module:
@@ -15,6 +16,7 @@ dependencies:
     - datetime
     - entity_browser
     - link
+    - text
 id: node.race.default
 targetEntityType: node
 bundle: race
@@ -53,6 +55,14 @@ content:
       field_widget_display_settings: {  }
     third_party_settings: {  }
     type: entity_browser_entity_reference
+    region: content
+  field_race_info:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
     region: content
   field_race_title_public:
     weight: 1
