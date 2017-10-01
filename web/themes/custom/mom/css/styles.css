@@ -870,12 +870,6 @@ body #pg__c.page-panel section#content > #content-area {
   display: none;
 }
 
-.bikereg--block {
-  background: #e1ba6b;
-  padding: 0.5em 1em;
-  color: #7a6aff;
-}
-
 @media only screen and (min-width: 768px) {
   .body-sidebars-first aside.sidebar-first {
     width: 23.72881%;
@@ -964,6 +958,13 @@ aside .block {
 aside .block h2 {
   font-size: 175%;
   color: #333333;
+}
+
+.bikereg--block {
+  background: #e1ba6b !important;
+  padding: 0.5em 1em;
+  color: #7a6aff;
+  text-align: center;
 }
 
 .site-branding-text {
@@ -1251,6 +1252,10 @@ form.entity-browser-asset-entity-browser__form {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+
+.nodetype--race .view-sponsors .view-content {
+  padding: 0 5%;
 }
 
 .sponsor--gold {

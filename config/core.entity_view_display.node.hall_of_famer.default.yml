@@ -7,8 +7,12 @@ dependencies:
     - field.field.node.hall_of_famer.field_hof_induction_date
     - field.field.node.hall_of_famer.field_hof_last_name
     - field.field.node.hall_of_famer.field_hof_nickname
+    - field.field.node.hall_of_famer.field_hof_photo
+    - image.style.medium
     - node.type.hall_of_famer
   module:
+    - field_formatter_class
+    - media_entity
     - user
 id: node.hall_of_famer.default
 targetEntityType: node
@@ -49,6 +53,17 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_hof_photo:
+    weight: 4
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: media_thumbnail
     region: content
 hidden:
   links: true

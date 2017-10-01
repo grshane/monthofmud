@@ -22,6 +22,14 @@
   }
 }
 
+.nodetype--race {
+  .view-sponsors {
+    .view-content {
+      padding: 0 5%;
+    }
+  }
+}
+
 .sponsor--gold {
   @include breakpoint($up-sm){
     width: span(4);
