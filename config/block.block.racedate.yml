@@ -1,0 +1,42 @@
+uuid: 6e0277d9-e16a-4a99-9556-542c19ff6de9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools
+    - ctools_block
+  theme:
+    - mom
+third_party_settings:
+  block_class:
+    classes: ''
+id: racedate
+theme: mom
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'entity_field:node:field_race_date'
+settings:
+  id: 'entity_field:node:field_race_date'
+  label: 'Race Date'
+  provider: ctools_block
+  label_display: visible
+  formatter:
+    label: hidden
+    type: datetime_default
+    settings:
+      timezone_override: ''
+      format_type: race_listing
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
