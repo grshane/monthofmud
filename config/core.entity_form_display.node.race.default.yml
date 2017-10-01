@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.race.field_race_date
     - field.field.node.race.field_race_imag
     - field.field.node.race.field_race_info
+    - field.field.node.race.field_race_results
     - field.field.node.race.field_race_title_public
     - node.type.race
   module:
@@ -25,7 +26,7 @@ content:
   field_race_addr:
     weight: 2
     settings:
-      default_country: US
+      default_country: ''
     third_party_settings: {  }
     type: address_default
     region: content
@@ -58,6 +59,14 @@ content:
     region: content
   field_race_info:
     weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_race_results:
+    weight: 28
     settings:
       rows: 5
       placeholder: ''

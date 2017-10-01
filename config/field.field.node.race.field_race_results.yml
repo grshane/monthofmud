@@ -1,0 +1,21 @@
+uuid: 131ec109-cc7b-484e-8b22-215c61f2f3b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_race_results
+    - node.type.race
+  module:
+    - text
+id: node.race.field_race_results
+field_name: field_race_results
+entity_type: node
+bundle: race
+label: 'Race Results'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

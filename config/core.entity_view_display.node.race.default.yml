@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.race.field_race_date
     - field.field.node.race.field_race_imag
     - field.field.node.race.field_race_info
+    - field.field.node.race.field_race_results
     - field.field.node.race.field_race_title_public
     - node.type.race
   module:
@@ -68,6 +69,13 @@ content:
     region: content
   field_race_info:
     weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_race_results:
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }

@@ -1232,6 +1232,23 @@ form.entity-browser-asset-entity-browser__form {
   display: none;
 }
 
+.search--header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.search--header form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 1em 0 0;
+}
+
 .sponsor__class .sponsor__class--title {
   text-align: center;
   font-family: "crackhouse";
