@@ -1,0 +1,22 @@
+uuid: c5d2e807-25d0-4d0d-9e92-a1ce2afffdc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mom
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mom_help
+theme: mom
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

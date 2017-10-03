@@ -1,0 +1,19 @@
+uuid: 73315dfb-4782-4f93-9357-90ce92a63819
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_race_results
+field_name: field_race_results
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

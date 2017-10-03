@@ -1,0 +1,22 @@
+uuid: 62887c5c-00ff-4fe8-a6db-1cab23c52ddf
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cog
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: cog_powered
+theme: cog
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

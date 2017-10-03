@@ -1,0 +1,27 @@
+uuid: 86f41431-b11c-4f76-b3f8-0da710421b82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_wrapper.field_sections
+    - paragraphs.paragraphs_type.paragraph_wrapper
+  module:
+    - entity_reference_revisions
+    - field_formatter_class
+id: paragraph.paragraph_wrapper.default
+targetEntityType: paragraph
+bundle: paragraph_wrapper
+mode: default
+content:
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    region: content
+hidden: {  }

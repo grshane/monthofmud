@@ -1,0 +1,63 @@
+uuid: de9cc594-1789-49d5-ba7f-a8cde53b9c80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spon.field_spon_level_ref
+    - field.field.node.spon.field_spon_link
+    - field.field.node.spon.field_spon_logo
+    - field.field.node.spon.field_spon_name_public
+    - node.type.spon
+  module:
+    - field_formatter_class
+    - link
+    - user
+id: node.spon.default
+targetEntityType: node
+bundle: spon
+mode: default
+content:
+  field_spon_level_ref:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+  field_spon_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_spon_logo:
+    weight: 3
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+    type: entity_reference_entity_view
+    region: content
+  field_spon_name_public:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  links: true

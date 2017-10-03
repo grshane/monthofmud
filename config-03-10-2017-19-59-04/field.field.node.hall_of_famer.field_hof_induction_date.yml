@@ -1,0 +1,23 @@
+uuid: 972addb2-64f7-4cb0-9011-f5e1d9f7e218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hof_induction_date
+    - node.type.hall_of_famer
+id: node.hall_of_famer.field_hof_induction_date
+field_name: field_hof_induction_date
+entity_type: node
+bundle: hall_of_famer
+label: 'Induction Date'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
