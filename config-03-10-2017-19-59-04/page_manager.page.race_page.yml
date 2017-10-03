@@ -1,0 +1,21 @@
+uuid: 065507c2-1f22-4984-a877-4eba8f0b1388
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+id: race_page
+label: 'Race page'
+description: ''
+use_admin_theme: false
+path: '/race/{node:field_race_date:date:html_year}-{node:field_race_title_public}'
+access_logic: and
+access_conditions:
+  -
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: field_race_title_public
+parameters: {  }

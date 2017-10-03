@@ -1,0 +1,20 @@
+uuid: 95aa6d09-c5b0-44b4-92a2-da42acc4247a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+    - node
+id: node.field_hof_photo
+field_name: field_hof_photo
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

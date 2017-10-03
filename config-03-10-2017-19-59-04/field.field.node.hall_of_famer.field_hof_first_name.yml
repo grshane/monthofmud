@@ -1,0 +1,19 @@
+uuid: 82624d15-fa44-4e59-a1db-7402082a5bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hof_first_name
+    - node.type.hall_of_famer
+id: node.hall_of_famer.field_hof_first_name
+field_name: field_hof_first_name
+entity_type: node
+bundle: hall_of_famer
+label: 'First Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

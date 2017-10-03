@@ -1,0 +1,39 @@
+uuid: e17b96eb-f5eb-41a0-b9a7-796fb585d7fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_race_imag
+    - media_entity.bundle.images
+    - node.type.race
+  module:
+    - entityconnect
+third_party_settings:
+  entityconnect:
+    buttons:
+      button_add: '1'
+      button_edit: '1'
+    icons:
+      icon_add: '0'
+      icon_edit: '0'
+id: node.race.field_race_imag
+field_name: field_race_imag
+entity_type: node
+bundle: race
+label: 'Race Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      images: images
+    sort:
+      field: created
+      direction: DESC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

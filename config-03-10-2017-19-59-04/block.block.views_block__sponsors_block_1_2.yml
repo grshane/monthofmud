@@ -1,0 +1,36 @@
+uuid: 9512b057-4df7-4024-b702-e6a80f2c5d3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - mom
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__sponsors_block_1_2
+theme: mom
+region: post_content
+weight: 0
+provider: null
+plugin: 'views_block:sponsors-block_1'
+settings:
+  id: 'views_block:sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '40'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,22 @@
+uuid: 40208177-5f62-49ac-bc7f-f1a733dbc20b
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - mo_m
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: mo_m_help
+theme: mo_m
+region: content
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
