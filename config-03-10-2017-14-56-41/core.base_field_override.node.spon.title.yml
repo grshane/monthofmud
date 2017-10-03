@@ -1,0 +1,18 @@
+uuid: e7a122b5-d9a4-4659-b88a-483ba97858f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.spon
+id: node.spon.title
+field_name: title
+entity_type: node
+bundle: spon
+label: 'Sponsor Name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,78 @@
+uuid: d7e95fb3-4dc4-4b1a-9af5-9a40417fe1ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.asset_entity_browser_
+    - field.field.node.hall_of_famer.field_hof_first_name
+    - field.field.node.hall_of_famer.field_hof_induction_date
+    - field.field.node.hall_of_famer.field_hof_last_name
+    - field.field.node.hall_of_famer.field_hof_nickname
+    - field.field.node.hall_of_famer.field_hof_photo
+    - node.type.hall_of_famer
+  module:
+    - entity_browser
+id: node.hall_of_famer.default
+targetEntityType: node
+bundle: hall_of_famer
+mode: default
+content:
+  field_hof_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hof_induction_date:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_hof_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hof_nickname:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hof_photo:
+    weight: 27
+    settings:
+      entity_browser: asset_entity_browser_
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

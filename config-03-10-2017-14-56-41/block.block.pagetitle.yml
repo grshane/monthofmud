@@ -1,0 +1,31 @@
+uuid: fb789b3d-e865-4071-a788-4a1dedfe7820
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools
+  theme:
+    - mom
+third_party_settings:
+  block_class:
+    classes: ''
+id: pagetitle
+theme: mom
+region: pre_content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

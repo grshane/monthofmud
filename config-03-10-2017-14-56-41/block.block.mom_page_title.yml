@@ -1,0 +1,39 @@
+uuid: c8655902-76c6-4471-892f-1958dce6748d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools
+    - system
+  theme:
+    - mom
+third_party_settings:
+  block_class:
+    classes: ''
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: mom_page_title
+theme: mom
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

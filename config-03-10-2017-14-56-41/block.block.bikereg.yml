@@ -1,0 +1,45 @@
+uuid: ae2cc16f-5a55-4601-b608-b6724b5fa62b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - ctools
+    - ctools_block
+  theme:
+    - mom
+third_party_settings:
+  block_class:
+    classes: bikereg--block
+id: bikereg
+theme: mom
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'entity_field:node:field_race_bike_reg'
+settings:
+  id: 'entity_field:node:field_race_bike_reg'
+  label: 'Bike Reg'
+  provider: ctools_block
+  label_display: '0'
+  formatter:
+    label: visually_hidden
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: '0'
+    third_party_settings: {  }
+    weight: 0
+  context_mapping:
+    entity: '@node.node_route_context:node'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

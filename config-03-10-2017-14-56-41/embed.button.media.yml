@@ -1,0 +1,18 @@
+uuid: f1ffc21a-9898-4c6f-99fd-26a8b1f5511f
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - media_entity
+label: Media
+id: media
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles: {  }
+  display_plugins: {  }
+  entity_browser: asset_entity_browser_
+  entity_browser_settings:
+    display_review: true
+icon_uuid: null

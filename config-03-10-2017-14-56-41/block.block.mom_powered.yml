@@ -1,0 +1,22 @@
+uuid: b1ce2374-8318-4833-a1cd-7ad03a035a04
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mom
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: mom_powered
+theme: mom
+region: footer
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
