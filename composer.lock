@@ -5180,7 +5180,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/rules",
-                "reference": "da7931d43ae1da607c981d96405f38732f37ddbd"
+                "reference": "a1ef1927c9a24d152c24ea87dc9817a71ec9f4d8"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -5197,8 +5197,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha3+2-dev",
-                    "datestamp": "1506344943",
+                    "version": "8.x-3.0-alpha3+26-dev",
+                    "datestamp": "1506759544",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -5224,7 +5224,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/rules"
             },
-            "time": "2017-09-30T08:11:35+00:00"
+            "time": "2017-09-30T08:44:18+00:00"
         },
         {
             "name": "drupal/simple_block",
