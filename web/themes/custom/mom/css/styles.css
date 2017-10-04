@@ -1232,6 +1232,10 @@ form.entity-browser-asset-entity-browser__form {
   display: none;
 }
 
+.node--type-race .field__label {
+  font-weight: bold;
+}
+
 .search--header {
   display: -ms-flexbox;
   display: flex;
