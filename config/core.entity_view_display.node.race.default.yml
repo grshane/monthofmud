@@ -12,10 +12,7 @@ dependencies:
     - field.field.node.race.field_race_title_public
     - node.type.race
   module:
-    - address
-    - datetime
     - field_formatter_class
-    - link
     - media_entity
     - text
     - user
@@ -24,38 +21,6 @@ targetEntityType: node
 bundle: race
 mode: default
 content:
-  field_race_addr:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: address_default
-    region: content
-  field_race_bike_reg:
-    weight: 3
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: '0'
-      target: '0'
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    type: link
-    region: content
-  field_race_date:
-    weight: 1
-    label: visually_hidden
-    settings:
-      timezone_override: ''
-      format_type: race_listing
-    third_party_settings:
-      field_formatter_class:
-        class: ''
-    type: datetime_default
-    region: content
   field_race_imag:
     weight: 0
     label: hidden
@@ -68,19 +33,22 @@ content:
     type: media_thumbnail
     region: content
   field_race_info:
-    weight: 4
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_race_results:
-    weight: 5
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
 hidden:
+  field_race_addr: true
+  field_race_bike_reg: true
+  field_race_date: true
   field_race_title_public: true
   links: true
