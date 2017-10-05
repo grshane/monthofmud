@@ -1,0 +1,22 @@
+uuid: 814cce79-15f4-49cc-b0be-cfffa5e01071
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - eleven
+_core:
+  default_config_hash: mv7u-LwLuEq93CzaNP3RYQKEgyjlGK_jd_G5dFio3o4
+id: eleven_breadcrumbs
+theme: eleven
+region: footer
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
