@@ -115,3 +115,4 @@ permissions:
   - 'view page revisions'
   - 'view race revisions'
   - 'view spon revisions'
+  - 'view the administration theme'

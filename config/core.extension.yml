@@ -53,9 +53,11 @@ module:
   kint: 0
   layout_discovery: 0
   link: 0
+  masquerade: 0
   media_entity: 0
   media_entity_browser: 0
   media_entity_image: 0
+  menu_per_role: 0
   menu_ui: 0
   node: 0
   options: 0
@@ -87,6 +89,7 @@ module:
   token: 0
   toolbar: 0
   toolbar_menu: 0
+  total_control: 0
   tour: 0
   twig_field_value: 0
   twig_tweak: 0
@@ -111,6 +114,8 @@ theme:
   mo_m: 0
   cog: 0
   mom: 0
+  elevenfeat: 0
+  eleven: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
