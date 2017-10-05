@@ -54,6 +54,7 @@ module:
   layout_discovery: 0
   link: 0
   masquerade: 0
+  masquerade_float_block: 0
   media_entity: 0
   media_entity_browser: 0
   media_entity_image: 0
