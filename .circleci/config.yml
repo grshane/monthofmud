@@ -122,7 +122,7 @@ jobs:
 
             - run:    
                 name: Build Theme Assets
-                command: cd web/themes/custom/mom2017 && npm run build:dev
+                command: cd web/themes/custom/mom2017 && npm run build
 
             - run:
                 name: prepare database for site-under test

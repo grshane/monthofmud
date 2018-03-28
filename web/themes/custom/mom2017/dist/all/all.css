@@ -427,7 +427,6 @@ li {
   width: 1px;
   word-wrap: normal; }
 
-
 .hero {
   background: url("../../images/bg-image.jpg");
   width: 100vw;
@@ -452,8 +451,5 @@ li {
 
 .menu--main {
   background: #c4d600; }
-
-header {
-  background-color: #888b8d; }
 
 
