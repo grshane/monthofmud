@@ -32,9 +32,9 @@ web/update.php
 web/web.config
 
 # Generated files for frontend
-web/themes/custom/wvuidesign/node_modules
-web/themes/custom/wvuidesign/styleguide/kss-assets
-web/themes/custom/wvuidesign/css
+web/themes/custom/*/node_modules
+web/themes/custom/*/styleguide/kss-assets
+web/themes/custom/*/css
 web/libraries
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
