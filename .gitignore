@@ -31,6 +31,11 @@ web/sites/example.sites.php
 web/update.php
 web/web.config
 
+# Generated files for frontend
+web/themes/custom/wvuidesign/node_modules
+web/themes/custom/wvuidesign/styleguide/kss-assets
+web/themes/custom/wvuidesign/css
+web/libraries
 # Add directories containing build assets below.
 # Keep all additions above the "cut" line.
 
@@ -57,6 +62,7 @@ web/sites/default/files
 # Place local settings in settings.local.php
 web/sites/*/settings.local.php
 web/sites/*/services*.yml
+!web/sites/*/services.pantheon.*.yml 
 
 # Ignore SimpleTest multi-site environment.
 web/sites/simpletest
