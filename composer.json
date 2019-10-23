@@ -97,7 +97,7 @@
 "drupal/drupal": "*"
 },
 "minimum-stability": "alpha",
-"prefer-stable": false,
+"prefer-stable": true,
 "autoload": {
 "classmap": [
 "scripts/composer/ScriptHandler.php"
