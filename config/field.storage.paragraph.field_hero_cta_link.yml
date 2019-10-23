@@ -1,12 +1,12 @@
-uuid: 9c02ddc8-bd08-4e77-9d53-c2986b50d176
+uuid: cadc4fd2-19a8-41fb-9507-bb8378e0844d
 langcode: en
 status: true
 dependencies:
   module:
     - link
     - paragraphs
-id: paragraph.field_cta_link
-field_name: field_cta_link
+id: paragraph.field_hero_cta_link
+field_name: field_hero_cta_link
 entity_type: paragraph
 type: link
 settings: {  }

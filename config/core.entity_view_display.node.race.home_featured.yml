@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.race.field_race_date
     - field.field.node.race.field_race_imag
     - field.field.node.race.field_race_info
+    - field.field.node.race.field_race_results
     - field.field.node.race.field_race_title_public
     - node.type.race
   module:
@@ -54,4 +55,5 @@ hidden:
   field_race_addr: true
   field_race_bike_reg: true
   field_race_info: true
+  field_race_results: true
   links: true

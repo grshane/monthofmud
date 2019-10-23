@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.hero.field_bg_image
-    - field.field.paragraph.hero.field_cta_link
     - field.field.paragraph.hero.field_heading
+    - field.field.paragraph.hero.field_hero_cta_link
+    - field.field.paragraph.hero.field_hero_cta_text
     - field.field.paragraph.hero.field_para_view_block
     - image.style.thumbnail
     - paragraphs.paragraphs_type.hero
@@ -26,16 +27,24 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
-  field_cta_link:
-    weight: 2
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_hero_cta_link:
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  field_heading:
-    weight: 1
+  field_hero_cta_text:
+    weight: 4
     settings:
       size: 60
       placeholder: ''
@@ -48,6 +57,7 @@ content:
       match_operator: CONTAINS
       size: '60'
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: viewsreference_autocomplete
     region: content

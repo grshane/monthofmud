@@ -23,7 +23,7 @@ settings:
   provider: ctools_block
   label_display: visible
   formatter:
-    label: hidden
+    label: visually_hidden
     type: datetime_default
     settings:
       timezone_override: ''

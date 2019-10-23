@@ -8,6 +8,7 @@ dependencies:
     - entity_browser
     - image
     - media_entity
+    - node
     - user
 id: asset_browser
 label: 'Asset Browser'
@@ -286,6 +287,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
       sorts:
         created:
@@ -310,7 +313,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -325,7 +328,7 @@ display:
     display_options:
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

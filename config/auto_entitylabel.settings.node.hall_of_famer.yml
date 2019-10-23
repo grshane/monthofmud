@@ -1,0 +1,6 @@
+status: '1'
+pattern: 'HOF [node:field_hof_first_name] [node:field_hof_last_name]'
+php: 0
+dependencies:
+  config:
+    - node.type.hall_of_famer

@@ -6,6 +6,7 @@ dependencies:
     - block_class
     - ctools
     - ctools_block
+    - node
   theme:
     - mom
 third_party_settings:
@@ -33,6 +34,13 @@ settings:
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
+    bundles:
+      race: race
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
     bundles:
       race: race
     negate: false

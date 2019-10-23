@@ -23,7 +23,7 @@ settings:
   provider: ctools_block
   label_display: '0'
   formatter:
-    label: visually_hidden
+    label: hidden
     type: link
     settings:
       trim_length: 80

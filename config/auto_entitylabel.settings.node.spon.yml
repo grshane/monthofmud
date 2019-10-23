@@ -1,0 +1,6 @@
+status: '1'
+pattern: '[node:field_spon_name_public]'
+php: 0
+dependencies:
+  config:
+    - node.type.spon

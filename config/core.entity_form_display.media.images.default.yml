@@ -8,6 +8,7 @@ dependencies:
     - media_entity.bundle.images
   module:
     - image
+    - path
 id: media.images.default
 targetEntityType: media
 bundle: images
@@ -35,6 +36,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
@@ -42,6 +49,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     region: content
     third_party_settings: {  }
 hidden: {  }

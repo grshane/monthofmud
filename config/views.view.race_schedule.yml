@@ -267,6 +267,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         type:
           id: type
@@ -277,6 +279,9 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         field_race_date_value:
           id: field_race_date_value
           table: node__field_race_date
@@ -304,6 +309,11 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -525,6 +535,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         type:
           id: type
@@ -535,6 +547,9 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         field_race_date_value:
           id: field_race_date_value
           table: node__field_race_date
@@ -544,8 +559,8 @@ display:
           admin_label: ''
           operator: between
           value:
-            min: '2017-01-01 00:01:00'
-            max: '2017-12-31 23:59:59'
+            min: '2018-01-01 00:01:00'
+            max: '2018-12-31 23:59:59'
             value: ''
             type: date
           group: 1
@@ -562,6 +577,11 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

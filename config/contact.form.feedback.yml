@@ -7,8 +7,8 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - grshane@gmail.com
-reply: ''
+  - monthofmud89@gmail.com
+reply: 'Thank you for contacting Month of Mud the longest running Mountain Bike Series in Western PA. We will contact you shortly. Thank you!'
 weight: 0
 message: 'Your message has been sent.'
 redirect: ''

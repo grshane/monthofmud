@@ -4,6 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.spon.field_spon_level_ref
+    - field.field.node.spon.field_spon_link
+    - field.field.node.spon.field_spon_logo
+    - field.field.node.spon.field_spon_name_public
     - node.type.spon
   module:
     - user
@@ -15,4 +19,10 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_spon_level_ref: true
+  field_spon_link: true
+  field_spon_logo: true
+  field_spon_name_public: true

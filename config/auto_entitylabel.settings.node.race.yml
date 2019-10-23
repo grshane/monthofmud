@@ -1,0 +1,6 @@
+status: '1'
+pattern: '[node:field_race_title_public]-[node:field_race_date:date:html_year]'
+php: 0
+dependencies:
+  config:
+    - node.type.race
